@@ -42,6 +42,7 @@
             this._userControlContact = new InforApp.UserControlContact();
             this._userControlWork = new InforApp.UserControlWork();
             this._userControlProfile = new InforApp.UserControlProfile();
+            this.dragControl1 = new InforApp.DragControl();
             this.pnlTopMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             this.pnlTopMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlTopMenu.Name = "pnlTopMenu";
-            this.pnlTopMenu.Size = new System.Drawing.Size(1081, 26);
+            this.pnlTopMenu.Size = new System.Drawing.Size(1080, 25);
             this.pnlTopMenu.TabIndex = 0;
             // 
             // btnClose
@@ -61,8 +62,8 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnClose.Location = new System.Drawing.Point(1056, 0);
+            this.btnClose.ForeColor = System.Drawing.Color.Transparent;
+            this.btnClose.Location = new System.Drawing.Point(1050, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(25, 25);
             this.btnClose.TabIndex = 7;
@@ -78,9 +79,9 @@
             this.panel1.Controls.Add(this.btnNote);
             this.panel1.Controls.Add(this.btnProfile);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Location = new System.Drawing.Point(0, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(80, 682);
+            this.panel1.Size = new System.Drawing.Size(80, 680);
             this.panel1.TabIndex = 1;
             // 
             // btnContact
@@ -176,49 +177,53 @@
             // _userControlStudy
             // 
             this._userControlStudy.BackColor = System.Drawing.Color.Olive;
-            this._userControlStudy.Location = new System.Drawing.Point(80, 26);
-            this._userControlStudy.Name = "userControlStudy1";
-            this._userControlStudy.Size = new System.Drawing.Size(1001, 682);
+            this._userControlStudy.Location = new System.Drawing.Point(80, 25);
+            this._userControlStudy.Name = "_userControlStudy";
+            this._userControlStudy.Size = new System.Drawing.Size(1000, 680);
             this._userControlStudy.TabIndex = 6;
             // 
             // _userControlNote
             // 
             this._userControlNote.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this._userControlNote.Location = new System.Drawing.Point(80, 26);
-            this._userControlNote.Name = "userControlNote1";
-            this._userControlNote.Size = new System.Drawing.Size(1001, 682);
+            this._userControlNote.Location = new System.Drawing.Point(80, 25);
+            this._userControlNote.Name = "_userControlNote";
+            this._userControlNote.Size = new System.Drawing.Size(1000, 680);
             this._userControlNote.TabIndex = 5;
             // 
             // _userControlContact
             // 
             this._userControlContact.BackColor = System.Drawing.Color.DarkSlateGray;
-            this._userControlContact.Location = new System.Drawing.Point(80, 26);
-            this._userControlContact.Name = "userControlContact1";
-            this._userControlContact.Size = new System.Drawing.Size(1001, 682);
+            this._userControlContact.Location = new System.Drawing.Point(80, 25);
+            this._userControlContact.Name = "_userControlContact";
+            this._userControlContact.Size = new System.Drawing.Size(1000, 680);
             this._userControlContact.TabIndex = 4;
             // 
             // _userControlWork
             // 
             this._userControlWork.BackColor = System.Drawing.Color.DarkCyan;
-            this._userControlWork.Location = new System.Drawing.Point(80, 26);
-            this._userControlWork.Name = "userControlWork1";
-            this._userControlWork.Size = new System.Drawing.Size(1001, 682);
+            this._userControlWork.Location = new System.Drawing.Point(80, 25);
+            this._userControlWork.Name = "_userControlWork";
+            this._userControlWork.Size = new System.Drawing.Size(1000, 680);
             this._userControlWork.TabIndex = 3;
             // 
             // _userControlProfile
             // 
             this._userControlProfile.BackColor = System.Drawing.SystemColors.Control;
-            this._userControlProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControlProfile1.BackgroundImage")));
-            this._userControlProfile.Location = new System.Drawing.Point(80, 26);
-            this._userControlProfile.Name = "userControlProfile1";
-            this._userControlProfile.Size = new System.Drawing.Size(1001, 682);
+            this._userControlProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("_userControlProfile.BackgroundImage")));
+            this._userControlProfile.Location = new System.Drawing.Point(80, 25);
+            this._userControlProfile.Name = "_userControlProfile";
+            this._userControlProfile.Size = new System.Drawing.Size(1000, 680);
             this._userControlProfile.TabIndex = 2;
+            // 
+            // dragControl1
+            // 
+            this.dragControl1.SelectControl = this.pnlTopMenu;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 708);
+            this.ClientSize = new System.Drawing.Size(1080, 705);
             this.Controls.Add(this._userControlStudy);
             this.Controls.Add(this._userControlNote);
             this.Controls.Add(this._userControlContact);
@@ -232,6 +237,7 @@
             this.pnlTopMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -249,6 +255,7 @@
         private UserControlNote _userControlNote;
         private UserControlStudy _userControlStudy;
         private System.Windows.Forms.Button btnClose;
+        private DragControl dragControl1;
     }
 }
 
