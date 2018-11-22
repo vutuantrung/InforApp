@@ -15,6 +15,23 @@ namespace InforApp
         public UserControlWork()
         {
             InitializeComponent();
+
+            userControlWorkBank1.BringToFront();
+        }
+
+        private void btnBank_Click(object sender, EventArgs e)
+        {
+            userControlWorkBank1.BringToFront();
+        }
+
+        private void btnCaf_Click(object sender, EventArgs e)
+        {
+            userControlWorkCaf1.BringToFront();
+        }
+
+        private void btnAmeli_Click(object sender, EventArgs e)
+        {
+            userControlWorkAmeli1.BringToFront();
         }
     }
 }

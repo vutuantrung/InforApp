@@ -22,7 +22,7 @@ namespace InforApp
             btnStudy.BackColor = Color.Transparent;
             btnContact.BackColor = Color.Transparent;
 
-            userControlProfile1.BringToFront();
+            _userControlProfile.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace InforApp
             btnStudy.BackColor = Color.Transparent;
             btnContact.BackColor = Color.Transparent;
 
-            userControlProfile1.BringToFront();
+            _userControlProfile.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace InforApp
             btnStudy.BackColor = Color.Transparent;
             btnContact.BackColor = Color.Transparent;
 
-            userControlNote1.BringToFront();
+            _userControlNote.BringToFront();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace InforApp
             btnStudy.BackColor = Color.Transparent;
             btnContact.BackColor = Color.Transparent;
 
-            userControlWork1.BringToFront();
+            _userControlWork.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace InforApp
             btnProfile.BackColor = Color.Transparent;
             btnContact.BackColor = Color.Transparent;
 
-            userControlStudy1.BringToFront();
+            _userControlStudy.BringToFront();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace InforApp
             btnStudy.BackColor = Color.Transparent;
             btnProfile.BackColor = Color.Transparent;
 
-            userControlContact1.BringToFront();
+            _userControlContact.BringToFront();
         }
     }
 }

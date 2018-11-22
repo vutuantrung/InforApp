@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnlTopMenu = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnContact = new System.Windows.Forms.Button();
             this.btnStudy = new System.Windows.Forms.Button();
             this.btnWork = new System.Windows.Forms.Button();
             this.btnNote = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
-            this.userControlProfile1 = new InforApp.UserControlProfile();
-            this.userControlWork1 = new InforApp.UserControlWork();
-            this.userControlContact1 = new InforApp.UserControlContact();
-            this.userControlNote1 = new InforApp.UserControlNote();
-            this.userControlStudy1 = new InforApp.UserControlStudy();
-            this.btnClose = new System.Windows.Forms.Button();
+            this._userControlStudy = new InforApp.UserControlStudy();
+            this._userControlNote = new InforApp.UserControlNote();
+            this._userControlContact = new InforApp.UserControlContact();
+            this._userControlWork = new InforApp.UserControlWork();
+            this._userControlProfile = new InforApp.UserControlProfile();
             this.pnlTopMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +55,19 @@
             this.pnlTopMenu.Name = "pnlTopMenu";
             this.pnlTopMenu.Size = new System.Drawing.Size(1081, 26);
             this.pnlTopMenu.TabIndex = 0;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClose.Location = new System.Drawing.Point(1056, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(25, 25);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -160,70 +173,57 @@
             this.btnProfile.UseVisualStyleBackColor = true;
             this.btnProfile.Click += new System.EventHandler(this.button1_Click);
             // 
-            // userControlProfile1
+            // _userControlStudy
             // 
-            this.userControlProfile1.BackColor = System.Drawing.SystemColors.Control;
-            this.userControlProfile1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControlProfile1.BackgroundImage")));
-            this.userControlProfile1.Location = new System.Drawing.Point(80, 26);
-            this.userControlProfile1.Name = "userControlProfile1";
-            this.userControlProfile1.Size = new System.Drawing.Size(1001, 682);
-            this.userControlProfile1.TabIndex = 2;
+            this._userControlStudy.BackColor = System.Drawing.Color.Olive;
+            this._userControlStudy.Location = new System.Drawing.Point(80, 26);
+            this._userControlStudy.Name = "userControlStudy1";
+            this._userControlStudy.Size = new System.Drawing.Size(1001, 682);
+            this._userControlStudy.TabIndex = 6;
             // 
-            // userControlWork1
+            // _userControlNote
             // 
-            this.userControlWork1.BackColor = System.Drawing.Color.DarkCyan;
-            this.userControlWork1.Location = new System.Drawing.Point(80, 26);
-            this.userControlWork1.Name = "userControlWork1";
-            this.userControlWork1.Size = new System.Drawing.Size(1001, 682);
-            this.userControlWork1.TabIndex = 3;
+            this._userControlNote.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this._userControlNote.Location = new System.Drawing.Point(80, 26);
+            this._userControlNote.Name = "userControlNote1";
+            this._userControlNote.Size = new System.Drawing.Size(1001, 682);
+            this._userControlNote.TabIndex = 5;
             // 
-            // userControlContact1
+            // _userControlContact
             // 
-            this.userControlContact1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.userControlContact1.Location = new System.Drawing.Point(80, 26);
-            this.userControlContact1.Name = "userControlContact1";
-            this.userControlContact1.Size = new System.Drawing.Size(1001, 682);
-            this.userControlContact1.TabIndex = 4;
+            this._userControlContact.BackColor = System.Drawing.Color.DarkSlateGray;
+            this._userControlContact.Location = new System.Drawing.Point(80, 26);
+            this._userControlContact.Name = "userControlContact1";
+            this._userControlContact.Size = new System.Drawing.Size(1001, 682);
+            this._userControlContact.TabIndex = 4;
             // 
-            // userControlNote1
+            // _userControlWork
             // 
-            this.userControlNote1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.userControlNote1.Location = new System.Drawing.Point(80, 26);
-            this.userControlNote1.Name = "userControlNote1";
-            this.userControlNote1.Size = new System.Drawing.Size(1001, 682);
-            this.userControlNote1.TabIndex = 5;
+            this._userControlWork.BackColor = System.Drawing.Color.DarkCyan;
+            this._userControlWork.Location = new System.Drawing.Point(80, 26);
+            this._userControlWork.Name = "userControlWork1";
+            this._userControlWork.Size = new System.Drawing.Size(1001, 682);
+            this._userControlWork.TabIndex = 3;
             // 
-            // userControlStudy1
+            // _userControlProfile
             // 
-            this.userControlStudy1.BackColor = System.Drawing.Color.Olive;
-            this.userControlStudy1.Location = new System.Drawing.Point(80, 26);
-            this.userControlStudy1.Name = "userControlStudy1";
-            this.userControlStudy1.Size = new System.Drawing.Size(1001, 682);
-            this.userControlStudy1.TabIndex = 6;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnClose.Location = new System.Drawing.Point(1056, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(25, 25);
-            this.btnClose.TabIndex = 7;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = false;
+            this._userControlProfile.BackColor = System.Drawing.SystemColors.Control;
+            this._userControlProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControlProfile1.BackgroundImage")));
+            this._userControlProfile.Location = new System.Drawing.Point(80, 26);
+            this._userControlProfile.Name = "userControlProfile1";
+            this._userControlProfile.Size = new System.Drawing.Size(1001, 682);
+            this._userControlProfile.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 708);
-            this.Controls.Add(this.userControlStudy1);
-            this.Controls.Add(this.userControlNote1);
-            this.Controls.Add(this.userControlContact1);
-            this.Controls.Add(this.userControlWork1);
-            this.Controls.Add(this.userControlProfile1);
+            this.Controls.Add(this._userControlStudy);
+            this.Controls.Add(this._userControlNote);
+            this.Controls.Add(this._userControlContact);
+            this.Controls.Add(this._userControlWork);
+            this.Controls.Add(this._userControlProfile);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlTopMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -232,7 +232,6 @@
             this.pnlTopMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -244,11 +243,11 @@
         private System.Windows.Forms.Button btnWork;
         private System.Windows.Forms.Button btnStudy;
         private System.Windows.Forms.Button btnContact;
-        private UserControlProfile userControlProfile1;
-        private UserControlWork userControlWork1;
-        private UserControlContact userControlContact1;
-        private UserControlNote userControlNote1;
-        private UserControlStudy userControlStudy1;
+        private UserControlProfile _userControlProfile;
+        private UserControlWork _userControlWork;
+        private UserControlContact _userControlContact;
+        private UserControlNote _userControlNote;
+        private UserControlStudy _userControlStudy;
         private System.Windows.Forms.Button btnClose;
     }
 }

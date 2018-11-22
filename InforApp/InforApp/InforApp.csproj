@@ -89,6 +89,24 @@
     <Compile Include="UserControlWork.Designer.cs">
       <DependentUpon>UserControlWork.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlWorkContainer\UserControlWorkAmeli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlWorkContainer\UserControlWorkAmeli.Designer.cs">
+      <DependentUpon>UserControlWorkAmeli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlWorkContainer\UserControlWorkBank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlWorkContainer\UserControlWorkBank.Designer.cs">
+      <DependentUpon>UserControlWorkBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlWorkContainer\UserControlWorkCaf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlWorkContainer\UserControlWorkCaf.Designer.cs">
+      <DependentUpon>UserControlWorkCaf.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +134,15 @@
     <EmbeddedResource Include="UserControlWork.resx">
       <DependentUpon>UserControlWork.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlWorkContainer\UserControlWorkAmeli.resx">
+      <DependentUpon>UserControlWorkAmeli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlWorkContainer\UserControlWorkBank.resx">
+      <DependentUpon>UserControlWorkBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlWorkContainer\UserControlWorkCaf.resx">
+      <DependentUpon>UserControlWorkCaf.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -129,5 +156,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
