@@ -13,9 +13,7 @@ namespace InforApp
     public partial class UserControlWork : UserControl
     {
         int[] _arrPosition = new int[6];
-        bool isDragged = false;
         bool ignoreClick = false;
-        Point ptOffset;
 
         private Control _activeControl;
         private Point _previousPosition;

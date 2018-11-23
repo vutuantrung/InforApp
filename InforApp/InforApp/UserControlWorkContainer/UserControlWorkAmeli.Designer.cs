@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
             this.Name = "UserControlWorkAmeli";
-            this.Size = new System.Drawing.Size(355, 600);
+            this.Size = new System.Drawing.Size(1000, 680);
             this.ResumeLayout(false);
 
         }

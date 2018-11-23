@@ -42,7 +42,7 @@
             this._userControlContact = new InforApp.UserControlContact();
             this._userControlWork = new InforApp.UserControlWork();
             this._userControlProfile = new InforApp.UserControlProfile();
-            this.dragControl1 = new InforApp.DragControl();
+            this._dragControl = new InforApp.DragControl();
             this.pnlTopMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -217,7 +217,7 @@
             // 
             // dragControl1
             // 
-            this.dragControl1.SelectControl = this.pnlTopMenu;
+            this._dragControl.SelectControl = this.pnlTopMenu;
             // 
             // Form1
             // 
@@ -255,7 +255,7 @@
         private UserControlNote _userControlNote;
         private UserControlStudy _userControlStudy;
         private System.Windows.Forms.Button btnClose;
-        private DragControl dragControl1;
+        private DragControl _dragControl;
     }
 }
 

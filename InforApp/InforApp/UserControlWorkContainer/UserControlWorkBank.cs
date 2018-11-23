@@ -16,5 +16,10 @@ namespace InforApp.UserControlWorkContainer
         {
             InitializeComponent();
         }
+
+        private void change_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
