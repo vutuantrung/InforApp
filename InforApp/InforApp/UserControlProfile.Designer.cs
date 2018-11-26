@@ -35,20 +35,23 @@ namespace InforApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlProfile));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picBoxProfile = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.picBoxProfile = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxProfile)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -58,25 +61,22 @@ namespace InforApp
             this.panel1.Size = new System.Drawing.Size(968, 574);
             this.panel1.TabIndex = 0;
             // 
-            // picBoxProfile
+            // panel7
             // 
-            this.picBoxProfile.Image = ((System.Drawing.Image)(resources.GetObject("picBoxProfile.Image")));
-            this.picBoxProfile.Location = new System.Drawing.Point(100, 15);
-            this.picBoxProfile.Name = "picBoxProfile";
-            this.picBoxProfile.Size = new System.Drawing.Size(150, 150);
-            this.picBoxProfile.TabIndex = 0;
-            this.picBoxProfile.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Location = new System.Drawing.Point(14, 81);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(291, 478);
-            this.panel2.TabIndex = 0;
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel7.Location = new System.Drawing.Point(320, 500);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(633, 59);
+            this.panel7.TabIndex = 1;
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
@@ -86,37 +86,61 @@ namespace InforApp
             this.panel3.Size = new System.Drawing.Size(633, 401);
             this.panel3.TabIndex = 1;
             // 
-            // panel4
+            // panel6
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel4.Location = new System.Drawing.Point(12, 15);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(606, 112);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel7.Location = new System.Drawing.Point(320, 500);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(633, 59);
-            this.panel7.TabIndex = 1;
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel6.Location = new System.Drawing.Point(12, 275);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(606, 112);
+            this.panel6.TabIndex = 1;
             // 
             // panel5
             // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel5.Location = new System.Drawing.Point(12, 145);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(606, 112);
             this.panel5.TabIndex = 1;
             // 
-            // panel6
+            // panel4
             // 
-            this.panel6.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel6.Location = new System.Drawing.Point(12, 275);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(606, 112);
-            this.panel6.TabIndex = 1;
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel4.Location = new System.Drawing.Point(12, 15);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(606, 112);
+            this.panel4.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Location = new System.Drawing.Point(14, 81);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(291, 478);
+            this.panel2.TabIndex = 0;
+            // 
+            // picBoxProfile
+            // 
+            this.picBoxProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picBoxProfile.Image = ((System.Drawing.Image)(resources.GetObject("picBoxProfile.Image")));
+            this.picBoxProfile.Location = new System.Drawing.Point(100, 15);
+            this.picBoxProfile.Name = "picBoxProfile";
+            this.picBoxProfile.Size = new System.Drawing.Size(150, 150);
+            this.picBoxProfile.TabIndex = 0;
+            this.picBoxProfile.TabStop = false;
             // 
             // UserControlProfile
             // 
@@ -129,8 +153,8 @@ namespace InforApp
             this.Name = "UserControlProfile";
             this.Size = new System.Drawing.Size(1000, 680);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxProfile)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxProfile)).EndInit();
             this.ResumeLayout(false);
 
         }

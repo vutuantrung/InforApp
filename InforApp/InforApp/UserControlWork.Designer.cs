@@ -43,6 +43,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Aquamarine;
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Name = "panel1";
@@ -51,6 +54,9 @@
             // 
             // pnlButton
             // 
+            this.pnlButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlButton.BackColor = System.Drawing.Color.Transparent;
             this.pnlButton.Controls.Add(this.btnCaf);
@@ -66,6 +72,9 @@
             // 
             // btnCaf
             // 
+            this.btnCaf.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCaf.Location = new System.Drawing.Point(370, 10);
             this.btnCaf.Name = "btnCaf";
             this.btnCaf.Size = new System.Drawing.Size(115, 115);
@@ -76,6 +85,9 @@
             // 
             // button4
             // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Location = new System.Drawing.Point(250, 10);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(115, 115);
@@ -85,6 +97,9 @@
             // 
             // btnAmeli
             // 
+            this.btnAmeli.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAmeli.Location = new System.Drawing.Point(490, 10);
             this.btnAmeli.Name = "btnAmeli";
             this.btnAmeli.Size = new System.Drawing.Size(115, 115);
@@ -95,6 +110,9 @@
             // 
             // btnTest
             // 
+            this.btnTest.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTest.Location = new System.Drawing.Point(130, 10);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(115, 115);
@@ -104,6 +122,9 @@
             // 
             // btnBank
             // 
+            this.btnBank.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBank.ForeColor = System.Drawing.Color.Black;
             this.btnBank.Location = new System.Drawing.Point(10, 10);
             this.btnBank.Margin = new System.Windows.Forms.Padding(0);
@@ -116,6 +137,9 @@
             // 
             // userControlWorkCaf1
             // 
+            this.userControlWorkCaf1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.userControlWorkCaf1.BackColor = System.Drawing.Color.GreenYellow;
             this.userControlWorkCaf1.Location = new System.Drawing.Point(635, 70);
             this.userControlWorkCaf1.Name = "userControlWorkCaf1";
@@ -124,6 +148,9 @@
             // 
             // userControlWorkAmeli1
             // 
+            this.userControlWorkAmeli1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.userControlWorkAmeli1.BackColor = System.Drawing.Color.Aqua;
             this.userControlWorkAmeli1.Location = new System.Drawing.Point(635, 70);
             this.userControlWorkAmeli1.Name = "userControlWorkAmeli1";
@@ -132,6 +159,9 @@
             // 
             // userControlWorkBank1
             // 
+            this.userControlWorkBank1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.userControlWorkBank1.BackColor = System.Drawing.Color.Sienna;
             this.userControlWorkBank1.Location = new System.Drawing.Point(635, 70);
             this.userControlWorkBank1.Name = "userControlWorkBank1";

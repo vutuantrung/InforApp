@@ -20,6 +20,21 @@
             base.Dispose(disposing);
         }
 
+        private System.Windows.Forms.Panel pnlTopMenu;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnProfile;
+        private System.Windows.Forms.Button btnNote;
+        private System.Windows.Forms.Button btnWork;
+        private System.Windows.Forms.Button btnStudy;
+        private System.Windows.Forms.Button btnContact;
+        private UserControlProfile _userControlProfile;
+        private UserControlWork _userControlWork;
+        private UserControlContact _userControlContact;
+        private UserControlNote _userControlNote;
+        private UserControlStudy _userControlStudy;
+        private System.Windows.Forms.Button btnClose;
+        private DragControl _dragControl;
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -49,9 +64,11 @@
             // 
             // pnlTopMenu
             // 
+            this.pnlTopMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlTopMenu.BackColor = System.Drawing.Color.Black;
             this.pnlTopMenu.Controls.Add(this.btnClose);
-            this.pnlTopMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlTopMenu.Name = "pnlTopMenu";
             this.pnlTopMenu.Size = new System.Drawing.Size(1080, 25);
@@ -72,13 +89,15 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.btnContact);
             this.panel1.Controls.Add(this.btnStudy);
             this.panel1.Controls.Add(this.btnWork);
             this.panel1.Controls.Add(this.btnNote);
             this.panel1.Controls.Add(this.btnProfile);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 25);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(80, 680);
@@ -86,6 +105,9 @@
             // 
             // btnContact
             // 
+            this.btnContact.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnContact.BackColor = System.Drawing.Color.Transparent;
             this.btnContact.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnContact.FlatAppearance.BorderSize = 0;
@@ -104,6 +126,9 @@
             // 
             // btnStudy
             // 
+            this.btnStudy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStudy.BackColor = System.Drawing.Color.Transparent;
             this.btnStudy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnStudy.FlatAppearance.BorderSize = 0;
@@ -122,6 +147,9 @@
             // 
             // btnWork
             // 
+            this.btnWork.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnWork.BackColor = System.Drawing.Color.Transparent;
             this.btnWork.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnWork.FlatAppearance.BorderSize = 0;
@@ -140,6 +168,9 @@
             // 
             // btnNote
             // 
+            this.btnNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNote.BackColor = System.Drawing.Color.Transparent;
             this.btnNote.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnNote.FlatAppearance.BorderSize = 0;
@@ -158,6 +189,9 @@
             // 
             // btnProfile
             // 
+            this.btnProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnProfile.BackColor = System.Drawing.Color.Transparent;
             this.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnProfile.FlatAppearance.BorderSize = 0;
@@ -176,6 +210,9 @@
             // 
             // _userControlStudy
             // 
+            this._userControlStudy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._userControlStudy.BackColor = System.Drawing.Color.Olive;
             this._userControlStudy.Location = new System.Drawing.Point(80, 25);
             this._userControlStudy.Name = "_userControlStudy";
@@ -215,7 +252,7 @@
             this._userControlProfile.Size = new System.Drawing.Size(1000, 680);
             this._userControlProfile.TabIndex = 2;
             // 
-            // dragControl1
+            // _dragControl
             // 
             this._dragControl.SelectControl = this.pnlTopMenu;
             // 
@@ -242,20 +279,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlTopMenu;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnProfile;
-        private System.Windows.Forms.Button btnNote;
-        private System.Windows.Forms.Button btnWork;
-        private System.Windows.Forms.Button btnStudy;
-        private System.Windows.Forms.Button btnContact;
-        private UserControlProfile _userControlProfile;
-        private UserControlWork _userControlWork;
-        private UserControlContact _userControlContact;
-        private UserControlNote _userControlNote;
-        private UserControlStudy _userControlStudy;
-        private System.Windows.Forms.Button btnClose;
-        private DragControl _dragControl;
+        
     }
 }
 
