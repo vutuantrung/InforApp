@@ -86,6 +86,12 @@
     <Compile Include="UserControlStudy.Designer.cs">
       <DependentUpon>UserControlStudy.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlStudyContainer\UserControlStudyINTECH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlStudyContainer\UserControlStudyINTECH.Designer.cs">
+      <DependentUpon>UserControlStudyINTECH.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlWork.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlStudy.resx">
       <DependentUpon>UserControlStudy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlStudyContainer\UserControlStudyINTECH.resx">
+      <DependentUpon>UserControlStudyINTECH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlWork.resx">
       <DependentUpon>UserControlWork.cs</DependentUpon>
