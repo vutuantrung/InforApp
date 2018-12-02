@@ -12,14 +12,23 @@ namespace InforApp.UserControlWorkContainer
 {
     public partial class UserControlWorkBank : UserControl
     {
+        private static UserControlWorkBank _instance;
+
+        public static UserControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new UserControlWorkBank();
+                }
+                return _instance;
+            }
+        }
+
         public UserControlWorkBank()
         {
             InitializeComponent();
-        }
-
-        private void change_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

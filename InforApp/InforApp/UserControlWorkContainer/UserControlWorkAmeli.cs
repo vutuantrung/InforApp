@@ -12,6 +12,20 @@ namespace InforApp.UserControlWorkContainer
 {
     public partial class UserControlWorkAmeli : UserControl
     {
+        private static UserControlWorkAmeli _instance;
+
+        public static UserControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new UserControlWorkAmeli();
+                }
+                return _instance;
+            }
+        }
+
         public UserControlWorkAmeli()
         {
             InitializeComponent();

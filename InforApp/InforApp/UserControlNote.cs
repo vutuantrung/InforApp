@@ -12,6 +12,20 @@ namespace InforApp
 {
     public partial class UserControlNote : UserControl
     {
+        private static UserControlNote _instance;
+
+        public static UserControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new UserControlNote();
+                }
+                return _instance;
+            }
+        }
+
         public UserControlNote()
         {
             InitializeComponent();

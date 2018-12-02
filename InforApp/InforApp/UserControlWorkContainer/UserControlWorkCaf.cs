@@ -12,6 +12,19 @@ namespace InforApp.UserControlWorkContainer
 {
     public partial class UserControlWorkCaf : UserControl
     {
+        private static UserControlWorkCaf _instance;
+
+        public static UserControl Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new UserControlWorkCaf();
+                }
+                return _instance;
+            }
+        }
         public UserControlWorkCaf()
         {
             InitializeComponent();

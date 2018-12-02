@@ -101,7 +101,6 @@
             this.change.TabIndex = 2;
             this.change.Text = "\\";
             this.change.UseVisualStyleBackColor = true;
-            this.change.Click += new System.EventHandler(this.change_Click);
             // 
             // pictureBox3
             // 
